@@ -1,0 +1,30 @@
+.cartContainer {
+    border: 3px solid #E26D5C;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.btn-cart {
+    width: 100%;
+    background-color: #E26D5C;
+    margin: 15px;
+    color: white;
+}
+
+span {
+   color: #E26D5C; 
+}
+
+.btn-cart-operacion {
+    width: 20%;
+    background-color: #E26D5C;
+    margin: 15px;
+    color: white;
+}
+
+.count-container__contador {margin-left: 25px;
+}
