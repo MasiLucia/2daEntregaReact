@@ -13,7 +13,7 @@ function App() {
   return (
     <>
 
-<BrowserRouter>
+<BrowserRouter basename='/2daEntregaReact'>
 <NavBar />
         <Routes>
           <Route path='/' element={<ItemListContainer greeting={'Bienvenidos a Petshop Buddies!'} />} />
