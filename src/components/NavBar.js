@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import './NavBar.css';
 import CartWidget from "./CartWidget/CartWidget";
 import logo from '../assets/132030120-logotipo-de-icono-de-mascota-de-amor-rastro-de-perro-con-corazón-aislado-sobre-fondo-blanco-.webp'
+import FavouritesWidget from "./Favourites/FavouritesWidget";
 
 const NavBar = () => {
     return (
@@ -25,6 +26,7 @@ const NavBar = () => {
                     <Nav.Link as={Link}to='/category/juguetes' >Juguetes</Nav.Link>
                     <Nav.Link as={Link}to='/category/ropa' >Ropa</Nav.Link>
                     </Nav>  
+                    <FavouritesWidget />
                     <CartWidget/>
             </Container>
         </Navbar>

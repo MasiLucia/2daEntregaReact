@@ -5,23 +5,23 @@ import { getProduct } from "../../utils/products";
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState()
-    const { id } = useParams();
-    
-    useEffect(() => {
-      getProduct(id)
-        .then((data) => {
-          setProduct(data)
-        })
-        .catch(error => console.warn(error))
-    }, [id])
+  const [product, setProduct] = useState()
+  const { id } = useParams();
   
-    return (
-      <Container>
-        <h3>Detalle del Producto</h3>
-        {product && <ItemDetail product={product} />}
-      </Container>    
-    );
-  }
-   
-  export default ItemDetailContainer;
+  useEffect(() => {
+    getProduct(id)
+      .then((data) => {
+        setProduct(data)
+      })
+      .catch(error => console.warn(error))
+  }, [id])
+
+  return (
+    <Container>
+      <h1>Detalle del Producto</h1>
+      {product && <ItemDetail product={product} />}
+    </Container>    
+  );
+}
+ 
+export default ItemDetailContainer;

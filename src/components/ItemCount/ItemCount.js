@@ -1,49 +1,46 @@
-import { useState } from 'react';
-import '../../utils/products';
-import './ItemCount.css';
+import React, {useEffect, useState, } from 'react'
+import { Button, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './ItemCount.css';
 
-const ItemCount = ({ onAdd, initial, stock }) => {
-  const [qty, setQty] = useState(initial);
-  const addProduct = (num) => {
-    setQty(qty + num);
-  };
+const ItemCount = ({ initial, stock, onAdd }) => {
+  const [count, setCount] = useState(parseInt(initial));
+
+  const handleSubtract = () => {
+    setCount(count - 1)
+  }
+
+  const handleAdd = () => {
+    setCount(count + 1)
+  }
+
+  // stock = product.stock
+
+  const handleClick = () => onAdd(count);
+
+  useEffect(() => {
+      setCount(parseInt(initial));
+  },[initial])
 
   return (
-    <div className="cart-container">
-      <div className="count-container__contador">
-        <button
-          className="btn-cart-operacion"
-          onClick={() => addProduct(-1)}
-    
-          disabled={qty === initial}
-        >
-          -
-        </button>
-        <span className="count-container__qty">{qty}</span>
-        <button
-          className="btn-cart-operacion"
-          onClick={() => addProduct(+1)}
-       
-          disabled={qty === stock}
-        >
-          +
-        </button>
-      </div>
-
-      <Link to={`/cart`}>
-      <button
-        className="btn-cart"
-        onClick={() => {
-          onAdd(qty);
-        }}
-        disabled={stock === 0 ? true : null}
-      >
-        Add to Cart
+    <div className='cartContainer'>
+        <div>
+          <button className='btn-cart ' disabled={count <= 1} onClick={handleSubtract}>
+            -
+          </button>
+          <h5>{count}</h5>
+          <button className='btn-cart ' disabled={count >= stock} onClick={handleAdd}>
+            +
+          </button>
+        </div>
+      <div>
+      <button className='btn-cart-operacion ' disabled={stock <= 0} onClick={handleClick}>
+        Agregar al  Carrito
       </button>
-      </Link>
+      </div>
+  
     </div>
-  );
-};
+  )
+}
 
-export default ItemCount;
+export default ItemCount

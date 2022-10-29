@@ -1,0 +1,13 @@
+.itemDetailContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-comprar {
+
+        width: 40%;
+        background-color: #E26D5C;
+        margin: 15px;
+        color: white;
+    
+}

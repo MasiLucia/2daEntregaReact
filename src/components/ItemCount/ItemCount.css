@@ -1,15 +1,22 @@
 .cartContainer {
     border: 3px solid #E26D5C;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 30px;
     padding: 30px;
-    width: 80%;
+    width: 32%;
     text-align: center;
+
+background: rgba(255, 255, 255, 0.69);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(255, 255, 255, 0.37);
 }
 
 .btn-cart {
-    width: 100%;
+    width: 40%;
     background-color: #E26D5C;
     margin: 15px;
     color: white;
@@ -20,7 +27,7 @@ span {
 }
 
 .btn-cart-operacion {
-    width: 20%;
+    width: 40%;
     background-color: #E26D5C;
     margin: 15px;
     color: white;

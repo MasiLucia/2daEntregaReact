@@ -29,9 +29,9 @@ useEffect(() => {
 
     return ( 
         <Container> 
-        <h3>{greeting}</h3>
+        <h3 className='titulo'>{greeting}</h3>
         <img src ={fondo} className="fondo"></img>
-        <h3>Productos</h3>
+        <h3 className='titulo'>Productos</h3>
        
         <ItemList className="cards" products ={products} />
         </Container>

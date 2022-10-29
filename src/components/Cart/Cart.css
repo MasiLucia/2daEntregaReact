@@ -1,0 +1,11 @@
+.cartContainer svg {
+    color: red;
+    cursor: pointer;
+  }
+
+  .btn-operacion {
+    width: 30%;
+    background-color: #E26D5C;
+    margin: 15px;
+    color: white;
+}

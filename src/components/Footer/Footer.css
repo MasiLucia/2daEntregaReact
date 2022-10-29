@@ -1,0 +1,15 @@
+.footer__container {
+    margin-top: 15px;
+    background-color: #e26e5c67;
+    font-weight: 700;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+span {
+    color: white;
+}
