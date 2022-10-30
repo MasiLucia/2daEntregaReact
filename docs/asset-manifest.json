@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/2daEntregaReact/static/css/main.03a84a4a.css",
+    "main.js": "/2daEntregaReact/static/js/main.9bdd88ee.js",
+    "static/js/787.3b32223a.chunk.js": "/2daEntregaReact/static/js/787.3b32223a.chunk.js",
+    "static/media/41604-Labrador-dog-underwater-cute-animals-funny.jpg": "/2daEntregaReact/static/media/41604-Labrador-dog-underwater-cute-animals-funny.5d771fe3a2b5f748f82f.jpg",
+    "static/media/132030120-logotipo-de-icono-de-mascota-de-amor-rastro-de-perro-con-corazón-aislado-sobre-fondo-blanco-.webp": "/2daEntregaReact/static/media/132030120-logotipo-de-icono-de-mascota-de-amor-rastro-de-perro-con-corazón-aislado-sobre-fondo-blanco-.d686157027cf7108639d.webp",
+    "index.html": "/2daEntregaReact/index.html",
+    "main.03a84a4a.css.map": "/2daEntregaReact/static/css/main.03a84a4a.css.map",
+    "main.9bdd88ee.js.map": "/2daEntregaReact/static/js/main.9bdd88ee.js.map",
+    "787.3b32223a.chunk.js.map": "/2daEntregaReact/static/js/787.3b32223a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03a84a4a.css",
+    "static/js/main.9bdd88ee.js"
+  ]
+}
